@@ -45,6 +45,7 @@ export const DivOverlay = styled.div`
   height: 100%;
   width: 100%;
   opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s
 `
 export const H1 = styled.h1`
   font-size: 68px;

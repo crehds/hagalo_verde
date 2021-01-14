@@ -3,7 +3,6 @@ import { Article, DivOverlay, H1, P, Section, P2 } from './styled'
 
 export const Inicio = () => {
   return  <Section>
-    {/* <Overlay/> */}
     <DivOverlay/>
     <Article>
       <H1>Ruway Q'umir</H1>
