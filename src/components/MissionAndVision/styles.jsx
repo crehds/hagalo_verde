@@ -11,11 +11,11 @@ export const Div = styled.div`
   text-align: center;
   padding: 0 30px;
   &:nth-child(1) {
-    border-right: 1px solid #40bf4f
+    border-right: 1px solid #40bf4f;
   }
 
   &:nth-child(2) {
-    border-left: 1px solid #40bf4f
+    border-left: 1px solid #40bf4f;
   }
 `;
 

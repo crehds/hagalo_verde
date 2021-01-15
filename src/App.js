@@ -3,6 +3,8 @@ import { Home } from './pages/Home';
 import { GlobalStyle } from './styles/GlobalStyles';
 import { Router } from '@reach/router';
 import { Conocenos } from './pages/Conocenos';
+import { Contenido } from './pages/Contenido';
+import './App.css'
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Router>
         <Home path='/'/>
         <Conocenos path='/conocenos'/>
+        <Contenido path='/contenido' />
       </Router>
     </div>
   );

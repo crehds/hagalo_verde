@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
@@ -28,5 +27,5 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     min-height: 100vh;
     /* padding-bottom: 10px; */
-  }
-`
+  }  
+`;
