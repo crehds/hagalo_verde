@@ -5,7 +5,7 @@ import image1 from '../../assets/microphone-audio-recording-2618102-p09gadnz94md
 import image2 from '../../assets/business-computer-mobile-2846221-p09ftct7h5bfdt0zzel9lnmn67j0nbjdfrn3efpbhs.jpg'
 import image3 from '../../assets/home-indoors-decor-2618511-p09h1rooec45yiijn3pnwy5pmmmdcgusjlc0q3unhs.jpg'
 
-export const ContainSection = () => {
+export const TopicSection = () => {
   return (
     <Section>
       <Article

@@ -1,12 +1,12 @@
 import React from 'react';
-import { ContainSection } from '../components/ContainSection';
+import { TopicSection } from '../components/TopicSection';
 import { TitlePage } from '../components/TitlePage';
 
 export const Contenido = () => {
   return (
     <>
       <TitlePage title='Contenido' />
-      <ContainSection />
+      <TopicSection />
     </>
   );
 };
