@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactSection } from '../components/ContactSection';
+import { AboutUsSection } from '../components/AboutUsSection';
 import { MissionAndVision } from '../components/MissionAndVision';
 import { TitlePage } from '../components/TitlePage';
 
@@ -8,7 +8,7 @@ export const Conocenos = () => {
     <>
       <TitlePage title='Nosotros' />
       <MissionAndVision />
-      <ContactSection/>
+      <AboutUsSection/>
     </>
   );
 };

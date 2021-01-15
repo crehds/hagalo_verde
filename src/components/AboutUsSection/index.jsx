@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageWrapper, Paragraph, Section, Title, H5, P, Span } from './styles';
 import image from '../../assets/book-pen-open-731199-768x512.png';
 
-export const ContactSection = () => {
+export const AboutUsSection = () => {
   return (
     <Section>
       <Title>
