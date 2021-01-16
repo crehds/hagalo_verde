@@ -1,5 +1,5 @@
 import React from 'react'
-import { Article, DivOverlay, H1, P, Section, P2 } from './styled'
+import { Article, DivOverlay, H1, P, Section, P2 } from './styles'
 
 export const Inicio = () => {
   return  <Section>

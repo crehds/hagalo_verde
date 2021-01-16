@@ -16,7 +16,7 @@ export const Section = styled.section`
 
 export const Article = styled.article`
   position: absolute;
-  top: 30%;
+  top: 25%;
   /* left: 0; */
   z-index: 10;
   /* border: 1px solid red; */
