@@ -6,6 +6,7 @@ import { Conocenos } from './pages/Conocenos';
 import { Contenido } from './pages/Contenido';
 import './App.css';
 import { Contactanos } from './pages/Contactanos';
+import { FooterSection as Footer } from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Contenido path='/contenido' />
         <Contactanos path='/contactanos' />
       </Router>
+      <Footer/>
     </div>
   );
 }
