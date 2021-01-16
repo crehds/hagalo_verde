@@ -129,6 +129,9 @@
 .icon-bold:before {
   content: "\ea62";
 }
+.icon-facebook:before {
+  content: "\ea90";
+}
 .icon-facebook2:before {
   content: "\ea91";
 }
