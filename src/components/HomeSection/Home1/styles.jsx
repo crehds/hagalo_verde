@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import image from '../../assets/photography-of-pathway-surrounded-by-plants.jpg'
-import overlay from '../../assets/white-shape-hero.svg'
+import image from '../../../assets/photography-of-pathway-surrounded-by-plants.jpg'
+import overlay from '../../../assets/white-shape-hero.svg'
 
-export const Section = styled.section`
+export const Div = styled.div`
   background-image:url(${image});
   background-position: center right;
   background-repeat: no-repeat;
@@ -11,7 +11,21 @@ export const Section = styled.section`
   width: 100%;
   position:relative;
   text-align:center;
-  margin-top: 7px;
+  /* margin-top: 7px; */
+`
+
+export const DivOverlay = styled.div`
+  background-image: url(${overlay});
+  position:absolute;
+  top: 0px;
+  left: -7px;
+  background-position:top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s
 `
 
 export const Article = styled.article`
@@ -34,19 +48,7 @@ export const P = styled.p`
   font-family: 'Lato';
 `
 
-export const DivOverlay = styled.div`
-  background-image: url(${overlay});
-  position:absolute;
-  top: 0px;
-  left: -7px;
-  background-position:top right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s
-`
+
 export const H1 = styled.h1`
   font-size: 68px;
   color: #0d3c00;

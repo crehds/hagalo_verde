@@ -17,9 +17,9 @@ function App() {
       <Router>
         <NotFound default />
         <Home path='/' />
-        <Conocenos path='/conocenos' />
-        <Contenido path='/contenido' />
-        <Contactanos path='/contactanos' />
+        <Conocenos path='conocenos' />
+        <Contenido path='contenido' />
+        <Contactanos path='contactanos' />
       </Router>
       <Footer />
     </div>

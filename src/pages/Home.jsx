@@ -1,8 +1,10 @@
 import React from 'react';
-import { Inicio } from '../components/Inicio';
+import { HomeSection } from '../components/HomeSection';
 
 export const Home = () => {
   return (
-    <Inicio />
+    <>
+      <HomeSection />
+    </>
   );
 };
