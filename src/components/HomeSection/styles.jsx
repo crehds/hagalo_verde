@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  height: 600px;
+  height: calc(100vh - 110px);
   width: 100%;
   position: relative;
 `

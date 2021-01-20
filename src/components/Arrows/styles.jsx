@@ -5,10 +5,10 @@ export const ArrowDiv = styled.div`
   top: 45%;
   z-index: 1000;
   &.right {
-    right: 20px;
+    right: 10px;
   }
   &.left {
-    left: 20px;
+    left: 10px;
   }
 `
 
