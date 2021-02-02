@@ -63,6 +63,7 @@ export const Button = styled(Link)`
   font-family:'Poppins';
   background-color: #40bf4f;
   color: #ffffff;
+  text-decoration:none;
   &:hover {
     background-color: #07bf1d;
     cursor: pointer;

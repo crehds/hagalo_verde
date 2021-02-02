@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Article } from './Article';
 import { ArticleContainer, Div, Span, Title } from './styles';
 
 export const Inicio3 = () => {
+  // useEffect(() => {
+  //   return function cleanup() {
+  //     console.log('desmontado');
+  //   };
+  // })
   return (
     <Div>
       <Title>Nuestro Planeta Primero</Title>
