@@ -7,7 +7,7 @@ export const Div = styled.div`
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 600px;
+  height: inherit;
   width: 100%;
   position:relative;
   text-align:center;
