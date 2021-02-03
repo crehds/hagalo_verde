@@ -15,11 +15,13 @@ function App() {
       <GlobalStyle />
       <NavBar />
       <Router>
-        <NotFound default />
-        <Home path='/' />
-        <Conocenos path='conocenos' />
-        <Contenido path='contenido' />
-        <Contactanos path='contactanos' />
+        <div exact path='/' style={{paddingTop: '110px'}}>
+          <NotFound default />
+          <Home exact path='/' />
+          <Conocenos exact path='conocenos' />
+          <Contenido exact path='contenido' />
+          <Contactanos exact path='contactanos' />
+        </div>
       </Router>
       <Footer />
     </div>

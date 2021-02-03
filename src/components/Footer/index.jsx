@@ -1,6 +1,17 @@
 import React from 'react';
-import { Author, Detail, Div, Footer, H3, H6, I, ImgWrapper, Sentence } from './styles';
+import {
+  Author,
+  Detail,
+  Div,
+  Footer,
+  H3,
+  H6,
+  I,
+  ImgWrapper,
+  Sentence,
+} from './styles';
 import image from '../../assets/hagaloverde_logo_110x110_2.png';
+import { Link } from '@reach/router';
 
 export const FooterSection = () => {
   return (
@@ -23,21 +34,52 @@ export const FooterSection = () => {
       </Div>
       <Div>
         <H3>Conócenos</H3>
-        <Detail>Acerca de nosotros</Detail>
-        <Detail>Contenido</Detail>
-        <Detail>Contacto</Detail>
-        <Detail>Blog</Detail>
+        <Link to='/conocenos' style={{ textDecoration: 'none' }}>
+          <Detail className='socialMedia'>
+            <span>Acerca de nosotros</span>
+          </Detail>
+        </Link>
+        <Link to='/contenido' style={{ textDecoration: 'none' }}>
+          <Detail className='socialMedia'>
+            <span>Contenido</span>
+          </Detail>
+        </Link>
+        <Link to='/contactanos' style={{ textDecoration: 'none' }}>
+          <Detail className='socialMedia'>
+            <span>Contacto</span>
+          </Detail>
+        </Link>
+        <Link to='/blog' style={{ textDecoration: 'none' }}>
+          <Detail className='socialMedia'>
+            <span>Blog</span>
+          </Detail>
+        </Link>
       </Div>
       <Div>
         <H3>Síguenos</H3>
-        <Detail>
-          <I className='icon-youtube'></I>Youtube
+        <Detail
+          className='socialMedia'
+          href='https://www.youtube.com/channel/UCYDEfyOCa6KQ2QEYqMRyPaQ'
+          target='_blank'
+        >
+          <I className='icon-youtube'></I>
+          <span>Youtube</span>
         </Detail>
-        <Detail>
-          <I className='icon-facebook2'></I>Facebook
+        <Detail
+          className='socialMedia'
+          href='https://www.facebook.com/H%C3%A1galo-Verde-100923345277576'
+          target='_blank'
+        >
+          <I className='icon-facebook2'></I>
+          <span>Facebook</span>
         </Detail>
-        <Detail>
-          <I className='icon-spotify'></I>Spotify
+        <Detail
+          className='socialMedia'
+          href='https://open.spotify.com/show/3iYug8FhS3Canwf3pzDLoq'
+          target='_blank'
+        >
+          <I className='icon-spotify'></I>
+          <span>Spotify</span>
         </Detail>
       </Div>
       <Div>

@@ -33,6 +33,7 @@ export const Sentence = styled.h2`
   font-family: 'Poppins';
   line-height: 1.5;
   font-size: 2.5rem;
+  margin: .5em 0;
   color: #ffffff;
 `;
 

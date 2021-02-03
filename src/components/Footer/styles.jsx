@@ -24,7 +24,7 @@ export const H3 = styled.h3`
   font-size: 22px;
 `;
 
-export const Detail = styled.div`
+export const Detail = styled.a`
   display: flex;
   align-items: center;
   color: #a8b0a6;
@@ -32,6 +32,20 @@ export const Detail = styled.div`
   font-size: 14px;
   margin: 8px 0;
   line-height: 1.85;
+  text-decoration: none;
+  
+  &.socialMedia {
+    cursor: pointer;
+    &:hover {
+    > i {
+      color: #0d3c00;
+    }
+    > span {
+      color: #f3f2ed;
+    }
+  }
+  }
+  
 `;
 
 export const I = styled.i`
