@@ -14,14 +14,12 @@ function App() {
     <div className='App'>
       <GlobalStyle />
       <NavBar />
-      <Router>
-        <div exact path='/' style={{paddingTop: '110px'}}>
-          <NotFound default />
-          <Home exact path='/' />
-          <Conocenos exact path='conocenos' />
-          <Contenido exact path='contenido' />
-          <Contactanos exact path='contactanos' />
-        </div>
+      <Router style={{ paddingTop: '110px' }}>
+        <NotFound default />
+        <Home path='/' />
+        <Conocenos exact path='conocenos' />
+        <Contenido exact path='contenido' />
+        <Contactanos exact path='contactanos' />
       </Router>
       <Footer />
     </div>

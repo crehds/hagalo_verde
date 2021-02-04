@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { Link as LinkRouter } from '@reach/router';
 
 export const Nav = styled.nav`
@@ -7,14 +7,16 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 15px 20px;
   padding-left: 60px;
-  /* padding-top: 110px; */
   position:fixed;
   width: 100%;
+  top: ${props => props.show ? '0' : '-130px'};
   height: auto;
   background-color: #F3F2ED;
   background-image: linear-gradient(1deg,#FFFFFF 0%,#F3F2ED 100%);
   z-index: 5000;
+  transition: .5s;
 `;
+
 const test = keyframes`
   from {
     transform: scale(.1) rotate(10deg);
