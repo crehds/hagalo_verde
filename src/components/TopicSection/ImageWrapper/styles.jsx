@@ -2,9 +2,12 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   padding-top: 15px;
+  @media (max-width: 970px) {
+    grid-area: image;
+  }
 `;
 
 export const Img = styled.img`
-  height: auto;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 `;

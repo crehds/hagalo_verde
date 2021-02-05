@@ -5,6 +5,13 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
+  @media (max-width: 970px) {
+    grid-area: description;
+    font-size: 14px;
+    & a {
+      margin-top: 10px;
+    }
+  }
 `;
 export const Span = styled.span`
   padding-top: 10px;
