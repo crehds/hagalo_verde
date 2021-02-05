@@ -5,8 +5,49 @@ export const UL = styled.ul`
   /* border: 1px solid red; */
   display: flex;
   /* width:100%; */
+  @media (max-width: 800px) {
+    position: fixed;
+    flex-direction: column;
+    right: -130px;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    padding-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 30px;
+    transition: .5s;
+    background-color: #f9f9f9;
+    &.is-active {
+      right: 0px;
+      > a:hover {
+        border: 2px solid #eaeaea;
+        /* border-color: #eaeaea; */
+      }
+    }
+  }
 `;
 
+export const Hamburguer = styled.div`
+  border: 1px solid #40bf4f;
+  position: fixed;
+  right: 35px;
+  top: 30px;
+  /* position: absolute; */
+  padding: 0.6em;
+  border-radius: 50%;
+  display: none;
+  transition: .3s;
+  &.is-active {
+    display: block;
+    /* right: 50px; */
+  }
+`;
+
+export const I = styled.i`
+  font-size: 20px;
+  color: #40bf4f;
+`;
 const bell = keyframes`
   0% {
     transform: rotate(35deg);
@@ -32,7 +73,7 @@ const bell = keyframes`
   100% {
     transform: rotate(0deg);
   }
-`
+`;
 
 export const Li = styled(LinkRouter)`
   /* display:inline-flex; */
