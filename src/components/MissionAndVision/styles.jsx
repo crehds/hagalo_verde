@@ -29,4 +29,8 @@ export const P = styled.p`
   font-family: 'Lato';
   font-weight: bold;
   margin: 0 40px;
+  @media (max-width: 1050px) {
+    margin: 0;
+    text-align: justify;
+  }
 `;

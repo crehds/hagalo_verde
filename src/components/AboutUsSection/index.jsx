@@ -1,7 +1,7 @@
 import React from 'react';
 import { ImageWrapper, Paragraph, Section, Title, H5, P, Span } from './styles';
 import image from '../../assets/book-pen-open-731199-768x512.png';
-
+import image2 from '../../assets/book-pen-open-731199-300x200.png'
 export const AboutUsSection = () => {
   return (
     <Section>

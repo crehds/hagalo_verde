@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link as LinkRouter } from '@reach/router';
 
 export const Nav = styled.nav`
