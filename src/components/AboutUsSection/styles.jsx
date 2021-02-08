@@ -10,6 +10,7 @@ export const Section = styled.section`
     margin-right: 20px;
     margin-left: 20px;
     grid-template-rows: 1fr 1.5fr;
+    grid-row-gap: 10px;
   }
 `;
 export const Title = styled.div`

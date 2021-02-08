@@ -7,5 +7,9 @@ export const Section = styled.section`
     margin: 0 30px;
     display: grid;
     grid-row-gap: 15px;
+    grid-template-rows: .9fr .9fr .9fr;
+    @media(max-width: 850px) {
+      margin: 0 15px;
+    }
   }
 `;

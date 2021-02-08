@@ -8,8 +8,12 @@ export const Div = styled.div`
   @media (max-width: 970px) {
     grid-area: description;
     font-size: 14px;
+    /* padding: 10px 10px; */
     & a {
       margin-top: 10px;
+    }
+    > p {
+      line-height: 1.6;
     }
   }
 `;
@@ -24,4 +28,5 @@ export const P = styled.p`
   font-family: 'Raleway';
   line-height: 1.85;
   padding-top: 20px;
+  text-align: justify;
 `;
