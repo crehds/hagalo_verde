@@ -4,13 +4,7 @@ import { Li, UL, Hamburguer, I } from './styled';
 export const Menu = () => {
   useEffect(() => {
     const onResize = (e) => {
-      const width = window.innerWidth <= 800;
-      const hamburguer = document.getElementById('hamburguer');
-      if (width) {
-        hamburguer.classList.add('is-active');
-      } else {
-        hamburguer.classList.remove('is-active');
-      }
+      handleIsActive();
     };
 
     window.addEventListener('resize', onResize);
@@ -19,7 +13,14 @@ export const Menu = () => {
     };
   });
 
-  function handleIsActive () {
+  function clickOnMenu(e) {
+    const isMenu = document.getElementById('menu').contains(e.target);
+    if (!isMenu) {
+      handleMenuIsActive();
+    }
+  }
+
+  function handleIsActive() {
     const width = window.innerWidth <= 800;
     const hamburguer = document.getElementById('hamburguer');
     if (width) {
@@ -43,13 +44,15 @@ export const Menu = () => {
     const menu = document.getElementById('menu');
     const hamburguer = document.getElementById('icon-menu');
     if (menu.classList.contains('is-active')) {
-      hamburguer.classList.remove('icon-x')
-      hamburguer.classList.add('icon-menu')
+      hamburguer.classList.remove('icon-x');
+      hamburguer.classList.add('icon-menu');
       menu.classList.remove('is-active');
+      document.removeEventListener('click', clickOnMenu);
     } else {
-      hamburguer.classList.remove('icon-menu')
-      hamburguer.classList.add('icon-x')
+      hamburguer.classList.remove('icon-menu');
+      hamburguer.classList.add('icon-x');
       menu.classList.add('is-active');
+      document.addEventListener('click', clickOnMenu);
     }
   }
 

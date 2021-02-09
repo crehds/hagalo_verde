@@ -18,6 +18,7 @@ export const UL = styled.ul`
     grid-row-gap: 30px;
     transition: .5s;
     background-color: #f9f9f9;
+    z-index: 8000;
     &.is-active {
       right: 0px;
       > a:hover {
