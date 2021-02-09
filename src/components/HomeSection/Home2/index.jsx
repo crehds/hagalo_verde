@@ -31,8 +31,17 @@ export const Inicio2 = () => {
     };
   }, [src]);
 
+  useEffect(() => {
+    const width = window.innerWidth < 620;
+    if (width) {
+      setSrc(image4);
+    } else {
+      setSrc(image2);
+    }
+  }, []);
+
   return (
-    <Div>
+    <Div id='home2'>
       <ImgWrapper>
         <Image src={src} alt='imagen referencial' />
       </ImgWrapper>
