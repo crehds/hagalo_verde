@@ -7,16 +7,40 @@ export const Div = styled.div`
   /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1.4fr 1fr;
+  /* @media(max-width: 680px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    > div {
+      grid-row: 2 / 3;
+    }
+    > article {
+      grid-row: 1 / 2;
+    }
+  } */
 `
 
 export const ImgWrapper = styled.div`
   /* border: 1px solid brown; */
   margin: 2em;
   padding: 3em;
+  @media(max-width: 870px) {
+    margin: 1.5em .5em;
+    /* margin-top: 2em; */
+    padding: 1em 1.5em;
+    padding-right: .8em;
+    /* max-width: 100%;
+    max-height: 100%; */
+    /* width: 100%;
+    height: 100%; */
+  }
 `
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  @media(max-width: 680px) {
+    max-width: 100%;
+    height: 100%;
+  } 
 `
 
 export const Article = styled.article`
@@ -29,6 +53,22 @@ export const Article = styled.article`
   & button {
     align-self: center;
   }
+  @media(max-width: 870px) {
+    padding: 8px;
+    padding-left: 0px;
+    > h5 {
+      font-size: 17px;
+    }
+    > h2 {
+      font-size: 35px;
+    }
+    > p {
+      line-height: 1.6;
+      font-size: 15px;
+      /* padding: 5px 5px; */
+      padding-left: 0px;
+    }
+  } 
 `
 
 export const H5 = styled.h5`

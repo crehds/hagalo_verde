@@ -15,12 +15,18 @@ export const Div = styled.div`
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #f3f2ed;
+  @media(max-width: 870px) {
+    padding-top: 10px;
+  }
 `;
 export const Title = styled.h2`
   font-size: 30px;
   /* width: 100%; */
   font-size: 2.5rem;
   margin-bottom: 20px;
+  @media(max-width: 870px) {
+    font-size: 2rem;
+  }
 `;
 export const Span = styled.span`
   border-top: 2px #40bf4f solid;
@@ -30,5 +36,5 @@ export const Span = styled.span`
 export const ArticleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px 0;
+  padding: 50px 0 20px;
 `;

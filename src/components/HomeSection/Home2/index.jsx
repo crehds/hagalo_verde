@@ -1,12 +1,40 @@
-import React from 'react';
-import { Article, Button, Div, H2, H5, Image, ImgWrapper, Paragraph } from './styles';
-import image from '../../../assets/chair-computer-desk-1866784-1024x682.jpg';
+import React, { useEffect, useState } from 'react';
+import {
+  Article,
+  Button,
+  Div,
+  H2,
+  H5,
+  Image,
+  ImgWrapper,
+  Paragraph,
+} from './styles';
+
+import image2 from '../../../assets/chair-computer-desk-1866784-768x512.png';
+import image4 from '../../../assets/chair-computer-desk-1866784-300x450.png';
 
 export const Inicio2 = () => {
+  const [src, setSrc] = useState(image4);
+  useEffect(() => {
+    const onResize = (e) => {
+      const width = window.innerWidth < 620;
+
+      if (width) {
+        setSrc(image4);
+      } else {
+        setSrc(image2);
+      }
+    };
+    window.addEventListener('resize', onResize);
+    return () => {
+      return window.removeEventListener('resize', onResize);
+    };
+  }, [src]);
+
   return (
     <Div>
       <ImgWrapper>
-        <Image src={image} alt='imagen referencial' />
+        <Image src={src} alt='imagen referencial' />
       </ImgWrapper>
       <Article>
         <H5>Bienvenidos</H5>
