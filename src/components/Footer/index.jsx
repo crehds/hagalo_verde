@@ -8,7 +8,8 @@ import {
   H6,
   I,
   ImgWrapper,
-  Sentence,
+  Linked,
+  Sentence
 } from './styles';
 import image from '../../assets/hagaloverde_logo_110x110_2.png';
 import { Link } from '@reach/router';
@@ -34,26 +35,18 @@ export const FooterSection = () => {
       </Div>
       <Div>
         <H3>Conócenos</H3>
-        <Link to='/conocenos' style={{ textDecoration: 'none' }}>
-          <Detail className='socialMedia'>
-            <span>Acerca de nosotros</span>
-          </Detail>
-        </Link>
-        <Link to='/contenido' style={{ textDecoration: 'none' }}>
-          <Detail className='socialMedia'>
-            <span>Contenido</span>
-          </Detail>
-        </Link>
-        <Link to='/contactanos' style={{ textDecoration: 'none' }}>
-          <Detail className='socialMedia'>
-            <span>Contacto</span>
-          </Detail>
-        </Link>
-        <Link to='/blog' style={{ textDecoration: 'none' }}>
-          <Detail className='socialMedia'>
-            <span>Blog</span>
-          </Detail>
-        </Link>
+        <Linked to='/conocenos' style={{ textDecoration: 'none' }}>
+          <span>Nosotros</span>
+        </Linked>
+        <Linked to='/contenido' style={{ textDecoration: 'none' }}>
+          <span>Contenido</span>
+        </Linked>
+        <Linked to='/contactanos' style={{ textDecoration: 'none' }}>
+          <span>Contacto</span>
+        </Linked>
+        <Linked to='/blog' style={{ textDecoration: 'none' }}>
+          <span>Blog</span>
+        </Linked>
       </Div>
       <Div>
         <H3>Síguenos</H3>
