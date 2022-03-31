@@ -12,7 +12,6 @@ import {
   Sentence
 } from './styles';
 import image from '../../assets/hagaloverde_logo_110x110_2.png';
-import { Link } from '@reach/router';
 
 export const FooterSection = () => {
   return (
