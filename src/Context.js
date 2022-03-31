@@ -7,13 +7,13 @@ const reducer = (state, action) => {
       if (state.content === 1) return { ...state, content: 4 };
       return {
         ...state,
-        content: state.content - 1,
+        content: state.content - 1
       };
     case 'right':
       if (state.content === 4) return { ...state, content: 1 };
       return {
         ...state,
-        content: state.content + 1,
+        content: state.content + 1
       };
     default:
       return state;
