@@ -6,6 +6,7 @@ import { Inicio4 } from '../Home4';
 import { useStateValue } from '../../../Context.js';
 import { useSetInterval } from '../../../hooks/useSetInterval';
 import { Arrow } from '../../Arrows';
+import { NotFound } from '../../NotFound';
 
 export const HomeContainer = () => {
   const [{ content }, dispatch] = useStateValue();
@@ -22,7 +23,7 @@ export const HomeContainer = () => {
       case 4:
         return <Inicio4 />;
       default:
-        break;
+        return <NotFound />;
     }
   }
 
