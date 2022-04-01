@@ -24,6 +24,10 @@ export const Title = styled.h2`
   @media (max-width: 870px) {
     font-size: 2rem;
   }
+  @media (max-width: 550px) {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
 `;
 export const Span = styled.span`
   border-top: 2px #40bf4f solid;
@@ -33,8 +37,11 @@ export const Span = styled.span`
 export const ArticleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 50px 0 20px;
-  @media (max-width: 550px) {
+  @media (max-width: 690px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding-top: 10px;
   }
 `;
