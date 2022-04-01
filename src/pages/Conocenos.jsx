@@ -8,7 +8,7 @@ export const Conocenos = () => {
     <>
       <TitlePage title='Nosotros' />
       <MissionAndVision />
-      <AboutUsSection/>
+      <AboutUsSection />
     </>
   );
 };

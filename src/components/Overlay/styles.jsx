@@ -6,4 +6,4 @@ export const SVG = styled.svg`
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-`
+`;

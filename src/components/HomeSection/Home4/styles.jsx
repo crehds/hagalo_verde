@@ -4,9 +4,7 @@ import image from '../../../assets/WEB-1-2-scaled.jpg';
 export const Div4 = styled.div`
   height: inherit;
   width: 100%;
-  /* border: 1px solid green; */
   padding: 1rem 2.5rem;
-  /* position: relative; */
 `;
 
 export const DivImage = styled.div`
@@ -16,14 +14,11 @@ export const DivImage = styled.div`
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin: auto 0; */
-  /* display: flex; */
   position: relative;
   padding-left: 2rem;
 `;
 
 export const Content = styled.div`
-  /* border: 1px solid red; */
   margin-right: 40%;
   position: absolute;
   top: 32%;
@@ -35,10 +30,9 @@ export const Content = styled.div`
     }
     @media (max-width: 870px) {
       top: 25%;
-      margin-right:0;
+      margin-right: 0;
       > h2 {
         font-size: 1.5rem;
-        /* text-align: center; */
       }
     }
   }

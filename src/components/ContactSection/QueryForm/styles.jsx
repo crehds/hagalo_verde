@@ -18,25 +18,25 @@ export const Div = styled.div`
 export const Input = styled.input`
   padding: 0.7em;
   font-size: 1rem;
-  background-color:#fafafa;
-  border:1px solid #eaeaea;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
   font-family: 'Raleway';
 `;
 
 export const Label = styled.label`
-  color: #7A7A7A;
+  color: #7a7a7a;
   padding-bottom: 7px;
 `;
 
 export const TextArea = styled.textarea`
-  background-color:#fafafa;
-  border:1px solid #eaeaea;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
   padding: 0.7em;
   height: 120px;
 `;
 
 export const Button = styled.button`
-  background-color:#40bf4f;
+  background-color: #40bf4f;
   margin: 5px auto;
   padding: 15px 17px;
   border-radius: 8px;

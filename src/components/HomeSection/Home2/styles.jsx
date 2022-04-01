@@ -36,7 +36,6 @@ export const Image = styled.img`
 export const Article = styled.article`
   margin: auto 0;
   padding: 15px;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   & button {

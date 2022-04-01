@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr; */
   column-gap: 50px;
   padding: 10px 80px;
   grid-template-areas: 'contact writeus map';
@@ -13,7 +11,6 @@ export const Section = styled.section`
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 'contact writeus' 'map map';
     padding: 10px 40px;
-    /* border: 1px solid red; */
     @media (max-width: 650px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -23,10 +20,8 @@ export const Section = styled.section`
 `;
 
 export const GridColumn = styled.div`
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin: 8px 20px;
   &:nth-of-type(1) {
     grid-area: contact;
@@ -42,7 +37,6 @@ export const GridColumn = styled.div`
 export const H3Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 `;
 
 export const H3 = styled.h3`
@@ -58,9 +52,7 @@ export const Span = styled.span`
   width: 48px;
 `;
 
-export const DirectContact = styled.div`
-  /* border:1px solid red; */
-`;
+export const DirectContact = styled.div``;
 
 export const PDirectContact = styled.p`
   font-family: 'Raleway';
@@ -71,7 +63,6 @@ export const PDirectContact = styled.p`
 `;
 
 export const DataDirectContact = styled.div`
-  /* border: 1px solid red; */
   padding: 5px 0;
   padding-left: 3px;
 `;
@@ -107,7 +98,6 @@ export const ASocialMedia = styled.a`
   text-decoration: none;
   padding: 6px 8px;
   margin: 2px 5px;
-  /* border:1px solid red; */
   border-radius: 50%;
   background-color: rgba(64, 191, 79, 0.1);
   &:hover {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { DivLogo, DivTitleLogo, H3, Nav, P, Img, DivImg } from './styles';
+import { DivLogo, DivTitleLogo, H3, Nav, P, DivImg } from './styles';
 import logo from '../../assets/hagaloverde_logo_86x90.png';
 import { Menu } from '../Menu/index';
 
@@ -8,7 +8,6 @@ export const NavBar = () => {
   useEffect(() => {
     const onScroll = (e) => {
       const showOrNot = window.scrollY > 200;
-      // show !== showOrNot && setShow(showOrNot)
       if (showOrNot) {
         setShow(false);
       } else {
@@ -43,7 +42,7 @@ export const NavBar = () => {
     <Nav show={show}>
       <DivLogo to='/'>
         <DivImg>
-          <Img src={logo} alt='logo de hagalo verde' />
+          <img src={logo} alt='logo de hagalo verde' />
         </DivImg>
         <DivTitleLogo>
           <H3>Hágalo Verde</H3>

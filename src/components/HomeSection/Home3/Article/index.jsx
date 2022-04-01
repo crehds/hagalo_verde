@@ -1,5 +1,5 @@
 import React from 'react';
-import { DivArticle, ArticleParagraph, H4, P, Button } from './styled';
+import { DivArticle, ArticleParagraph, H4, P, Button } from './styles';
 
 export const Article = ({ ord, title, paragraph, link }) => {
   return (

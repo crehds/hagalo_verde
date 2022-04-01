@@ -11,12 +11,8 @@ export const Div = styled.div`
   width: 100%;
   position: relative;
   text-align: center;
-  /* margin-top: 7px; */
   @media (max-width: 870px) {
     background-size: cover;
-    > div {
-      /* background-position: -10px -10px; */
-    }
   }
 `;
 
@@ -41,12 +37,9 @@ export const DivOverlay = styled.div`
 export const Article = styled.article`
   position: absolute;
   top: 25%;
-  /* left: 0; */
   z-index: 10;
-  /* border: 1px solid red; */
   text-align: left;
   padding-left: 100px;
-  /* display: inline-block; */
   max-height: 100%;
   @media (max-width: 1040px) {
     top: 20%;
@@ -70,7 +63,7 @@ export const Article = styled.article`
         max-width: 70%;
       }
     }
-    @media(max-width: 720px) {
+    @media (max-width: 720px) {
       top: 8%;
     }
   }

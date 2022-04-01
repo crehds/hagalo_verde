@@ -102,7 +102,6 @@ export const I = styled.i`
 export const ImgWrapper = styled.div`
   margin: 0 auto;
   display: flex;
-  /* text-align:center; */
   justify-content: center;
 `;
 

@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
-  /* border: 1px solid blue; */
   padding: 0 40px;
   padding-top: 10px;
-  @media(max-width: 1230px) {
+  @media (max-width: 1230px) {
     padding: 0 20px;
     @media (max-width: 970px) {
-      /* grid-area: title; */
       > h2 {
         font-size: 23px;
       }

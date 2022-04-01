@@ -4,8 +4,15 @@ import { ImageWrapper } from '../ImageWrapper';
 import { TitleArticle } from '../TitleArticle';
 import { Article as ArticleWrapper } from './styles';
 
-
-export const Article = ({ ord, title, description, href, icon, text, imageSrc }) => {
+export const Article = ({
+  ord,
+  title,
+  description,
+  href,
+  icon,
+  text,
+  imageSrc
+}) => {
   return (
     <ArticleWrapper>
       <TitleArticle ord={ord} title={title} />
