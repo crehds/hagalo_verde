@@ -9,23 +9,24 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   padding: 40px;
-  /* flex-wrap: wrap; */
-  /* position: relative; */
   background-image: url(${image});
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #f3f2ed;
-  @media(max-width: 870px) {
-    padding-top: 10px;
+  background-color: rgb(243, 242, 237);
+  @media (max-width: 870px) {
+    padding: 10px 28px 40px;
   }
 `;
 export const Title = styled.h2`
   font-size: 30px;
-  /* width: 100%; */
   font-size: 2.5rem;
   margin-bottom: 20px;
-  @media(max-width: 870px) {
+  @media (max-width: 870px) {
     font-size: 2rem;
+  }
+  @media (max-width: 550px) {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
   }
 `;
 export const Span = styled.span`
@@ -36,5 +37,11 @@ export const Span = styled.span`
 export const ArticleContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 50px 0 20px;
+  @media (max-width: 690px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 10px;
+  }
 `;

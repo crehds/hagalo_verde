@@ -2,9 +2,8 @@ import styled, { keyframes } from 'styled-components';
 import { Link as LinkRouter } from '@reach/router';
 
 export const UL = styled.ul`
-  /* border: 1px solid red; */
   display: flex;
-  /* width:100%; */
+
   @media (max-width: 800px) {
     position: fixed;
     flex-direction: column;
@@ -16,14 +15,13 @@ export const UL = styled.ul`
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 30px;
-    transition: .5s;
+    transition: 0.5s;
     background-color: #f9f9f9;
     z-index: 8000;
     &.is-active {
       right: 0px;
       > a:hover {
         border: 2px solid #eaeaea;
-        /* border-color: #eaeaea; */
       }
     }
   }
@@ -34,14 +32,12 @@ export const Hamburguer = styled.div`
   position: fixed;
   right: 35px;
   top: 30px;
-  /* position: absolute; */
   padding: 0.6em;
   border-radius: 50%;
   display: none;
-  transition: .3s;
+  transition: 0.3s;
   &.is-active {
     display: block;
-    /* right: 50px; */
   }
 `;
 
@@ -77,7 +73,6 @@ const bell = keyframes`
 `;
 
 export const Li = styled(LinkRouter)`
-  /* display:inline-flex; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -88,7 +83,6 @@ export const Li = styled(LinkRouter)`
   font-weight: 300;
   font-size: 18px;
   color: black;
-  /* animation: 1s ${bell} ease 1; */
   &:hover {
     color: #40bf4f;
     cursor: pointer;

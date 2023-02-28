@@ -7,14 +7,14 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 15px 20px;
   padding-left: 60px;
-  position:fixed;
+  position: fixed;
   width: 100%;
-  top: ${props => props.show ? '0' : '-130px'};
+  top: ${(props) => (props.show ? '0' : '-130px')};
   height: auto;
-  background-color: #F3F2ED;
-  background-image: linear-gradient(1deg,#FFFFFF 0%,#F3F2ED 100%);
+  background-color: #f3f2ed;
+  background-image: linear-gradient(1deg, #ffffff 0%, #f3f2ed 100%);
   z-index: 5000;
-  transition: .5s;
+  transition: 0.5s;
 `;
 
 const test = keyframes`
@@ -32,7 +32,7 @@ const aux = keyframes`
   to {
     transform:  rotateY(360deg);
   }
-`
+`;
 
 export const DivLogo = styled(LinkRouter)`
   display: grid;
@@ -48,7 +48,7 @@ export const DivLogo = styled(LinkRouter)`
 
 export const DivImg = styled.div`
   animation: 2s ${test} ease 1;
-`
+`;
 export const DivTitleLogo = styled.div`
   max-width: 100%;
   margin: auto 0;
@@ -73,7 +73,6 @@ export const H3 = styled.h3`
     rgba(127, 146, 166, 1) 80%,
     rgb(148, 173, 201) 100%
   );
-  /* color: #000; */
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -94,13 +93,8 @@ export const P = styled.p`
     #000 80%,
     rgb(148, 173, 201) 100%
   );
-  /* color: #000; */
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`;
-
-export const Img = styled.img`
-  /* animation: 2s ${test} ease 1; */
 `;

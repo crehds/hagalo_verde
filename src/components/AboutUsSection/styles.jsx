@@ -6,7 +6,7 @@ export const Section = styled.section`
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   margin: 80px 40px 20px;
-  @media(max-width: 870px) {
+  @media (max-width: 870px) {
     margin-right: 20px;
     margin-left: 20px;
     grid-template-rows: 1fr 1.5fr;
@@ -53,14 +53,13 @@ export const Span = styled.span`
 `;
 
 export const Paragraph = styled.div`
-  /* border: 1px solid red; */
   margin-top: 10px;
   columns: 2;
   font-family: 'Raleway';
   line-height: 1.85;
   font-weight: 300;
   text-align: justify;
-  @media(max-width: 870px) {
+  @media (max-width: 870px) {
     columns: 1;
     line-height: 1.5;
     > p {
@@ -72,17 +71,10 @@ export const Paragraph = styled.div`
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  /* width: 100%;
-  height: 100%; */
   @media (max-width: 1050px) {
     grid-column: 1 / 3;
-    /* grid-row: 2 / 3; */
     > img {
       width: 100%;
-      /* height: auto; */
     }
   }
-
-  /* border: 1px solid green; */
-  /* margin: 15px 20px; */
 `;

@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
   @media (max-width: 970px) {
     grid-area: description;
     font-size: 14px;
-    /* padding: 10px 10px; */
     & a {
       margin-top: 10px;
     }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Li, UL, Hamburguer, I } from './styled';
+import { Li, UL, Hamburguer, I } from './styles';
 
 export const Menu = () => {
   useEffect(() => {

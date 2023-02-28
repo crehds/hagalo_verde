@@ -2,8 +2,8 @@ import React from 'react';
 import { Section } from './styles';
 import { Article } from './Article';
 import image1 from '../../assets/microphone-audio-recording-2618102-p09gadnz94mdnkaskri0rcz6hfmc1z4d40zoaugmsw.jpg';
-import image2 from '../../assets/business-computer-mobile-2846221-p09ftct7h5bfdt0zzel9lnmn67j0nbjdfrn3efpbhs.jpg'
-import image3 from '../../assets/home-indoors-decor-2618511-p09h1rooec45yiijn3pnwy5pmmmdcgusjlc0q3unhs.jpg'
+import image2 from '../../assets/business-computer-mobile-2846221-p09ftct7h5bfdt0zzel9lnmn67j0nbjdfrn3efpbhs.jpg';
+import image3 from '../../assets/home-indoors-decor-2618511-p09h1rooec45yiijn3pnwy5pmmmdcgusjlc0q3unhs.jpg';
 
 export const TopicSection = () => {
   return (

@@ -8,7 +8,7 @@ import {
   AdvsoryTopicsGrid,
   ColumnGrid,
   TopicName,
-  AdvosoryTopic,
+  AdvosoryTopic
 } from './styles';
 
 export const AdvisorySection = () => {

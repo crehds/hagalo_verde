@@ -15,7 +15,7 @@ import {
   DataDirectContactRow,
   FollowUs,
   ISocialMedia,
-  ASocialMedia,
+  ASocialMedia
 } from './styles';
 
 export const ContactSection = () => {
@@ -65,7 +65,7 @@ export const ContactSection = () => {
           <H3>Escríbenos</H3>
           <Span></Span>
         </H3Container>
-        <QueryForm/>
+        <QueryForm />
       </GridColumn>
       <GridColumn>
         <H3Container>
@@ -73,7 +73,7 @@ export const ContactSection = () => {
           <Span></Span>
         </H3Container>
 
-        <Map/>
+        <Map />
       </GridColumn>
     </Section>
   );

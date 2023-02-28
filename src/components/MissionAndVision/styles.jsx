@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;

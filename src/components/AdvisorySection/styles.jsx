@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   background-color: #f3f2ed;
-  /* border: 1px solid red; */
   color: #0d3c00;
   padding: 40px 0 50px;
   margin-top: 20px;
-  /* height: 500px; */
 `;
 
 export const Title = styled.div`
@@ -24,9 +22,7 @@ export const P = styled.p`
 `;
 
 export const H2 = styled.h2`
-  /* color: #0d3c00; */
   font-size: 40px;
-  /* font-family:'Raleway' */
 `;
 export const AdvsoryTopicsGrid = styled.div`
   display: grid;
