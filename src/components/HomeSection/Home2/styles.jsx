@@ -6,6 +6,10 @@ export const Div = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15em auto;
+  }
 `;
 
 export const ImgWrapper = styled.div`
@@ -16,12 +20,9 @@ export const ImgWrapper = styled.div`
     padding: 1em 1.5em;
     padding-right: 0.8em;
     @media (max-width: 550px) {
-      margin: 1.1em 0.4em;
-      padding: 0.8em 1.5em;
-      padding-right: 0.7em;
+      margin: 0.5em 0.3em;
+      padding: 0.5em 1.4em;
     }
-  }
-  @media (max-width: 550px) {
   }
 `;
 export const Image = styled.img`
@@ -44,6 +45,9 @@ export const Article = styled.article`
   @media (max-width: 870px) {
     padding: 8px;
     padding-left: 0px;
+    @media (max-width: 550px) {
+      padding: 0 25px;
+    }
     > h5 {
       font-size: 17px;
       @media (max-width: 550px) {
@@ -88,6 +92,10 @@ export const Paragraph = styled.p`
   text-align: justify;
   padding: 10px 10px;
   padding-right: 2em;
+  @media (max-width: 550px) {
+    margin-top: 3px;
+    padding: 5px 10px;
+  }
 `;
 export const Button = styled(Link)`
   margin: 0 auto;
